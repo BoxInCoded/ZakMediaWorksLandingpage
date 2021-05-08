@@ -1,0 +1,46 @@
+{
+  "name": "zakmediaworks.eu",
+  "description": "ZakMediaWorks Landing Page",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "watch": "node-sass sass/ -o ./ --source-map true --output-style expanded --indent-type tab --indent-width 1 -w",
+    "compile:css": "node-sass sass/ -o ./ && stylelint '*.css' --fix || true && stylelint '*.css' --fix",
+    "compile:rtl": "rtlcss style.css style-rtl.css",
+    "bundle": "dir-archiver --src . --dest ../_s.zip --exclude .DS_Store .stylelintrc.json .eslintrc .git .gitattributes .github .gitignore README.md composer.json composer.lock node_modules vendor package-lock.json package.json .travis.yml phpcs.xml.dist sass style.css.map"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BoxInCoded/ZakMediaWorks.git"
+  },
+  "author": "BoxInCoded",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BoxInCoded/ZakMediaWorks/issues"
+  },
+  "homepage": "https://github.com/BoxInCoded/ZakMediaWorks#readme",
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "watch": "^1.0.2"
+  },
+  "devDependencies": {
+    "dir-archiver": "^1.2.0",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0",
+    "node-sass": "^4.14.1",
+    "rtlcss": "^3.1.2"
+  },
+  "rtlcssConfig": {
+    "options": {
+      "autoRename": false,
+      "autoRenameStrict": false,
+      "blacklist": {},
+      "clean": true,
+      "greedy": false,
+      "processUrls": false,
+      "stringMap": []
+    },
+    "plugins": [],
+    "map": false
+  }
+}

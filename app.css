@@ -1,0 +1,17 @@
+.wrapper {
+	background-color: #000;
+}
+
+.wrapper p {
+	color: #fff;
+}
+
+.wrapper .red__text {
+	color: red;
+}
+
+.wrapper .green__text {
+	color: green;
+}
+
+/*# sourceMappingURL=app.css.map */

@@ -1,0 +1,18 @@
+{
+	"version": 3,
+	"file": "app.css",
+	"sources": [
+		"sass/app.scss",
+		"sass/abstracts/_mixins.scss",
+		"sass/abstracts/_variables.scss",
+		"sass/core/_reset.scss",
+		"sass/core/_typography.scss",
+		"sass/layout/_footer.scss",
+		"sass/layout/_grid.scss",
+		"sass/layout/_navigation.scss",
+		"sass/layout/_sidebar.scss",
+		"sass/layout/_header.scss"
+	],
+	"names": [],
+	"mappings": "ASAA,AAAA,QAAQ,CAAC;CACP,gBAAgB,EPDX,IAAI;COWV;;AAXD,AAEE,QAFM,CAEN,CAAC,CAAC;CACA,KAAK,EPFG,IAAI;COGb;;AAJH,AAKE,QALM,CAKN,UAAU,CAAC;CACT,KAAK,EPJC,GAAG;COKV;;AAPH,AAQE,QARM,CAQN,YAAY,CAAC;CACX,KAAK,EPNG,KAAK;COOd"
+}
