@@ -1,6 +1,11 @@
 "use strict";
 
 const feed = [{
+    background: {
+        main_section_image: [
+            'header.png'
+        ]
+    },
     Text: {
         first_text: 'Video projektai nuo idėjos iki finalo',
         text_block: 'Lorem ipsum dolor sit, amet consectetur adipisicing?',

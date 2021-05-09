@@ -24,6 +24,7 @@ function getData(data) {
 function getList(list) {
 
     console.log(list.Text.first_text);
+    console.log(list.Text.text_block);
 
     let HTML = `<h1>${list.Text.first_text}</h1>`;
 

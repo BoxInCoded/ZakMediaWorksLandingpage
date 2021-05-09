@@ -1,51 +1,45 @@
 .wrapper {
-  width: 100%;
   .main__wrap {
     .container {
       .header {
-        width: 100%;
-        height: auto;
-          .logo {
-            width: 100%;
-            height: 25px;
-            background-color: black;
-            padding: 25px;
+        .logo {
+          width: 100%;
+          height: 25px;
+          padding: 50px;
 
-            a.main__logo {
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              color: white;
-            }
+          a.main__logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
           }
+        }
       }
 
+
       .main {
+        background-image: url("/assets/img/header.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
         width: 100%;
         height: 100vh;
-        background-color: black;
-        .block {
-          .first__section {
-            .image {
-              background-image: url("./assets/img/header.png");
-              background-position: center;
-              background-repeat: no-repeat;
-              background-size: cover;
-            }
-            .first__text {
-              display: flex;
-                justify-content: center;
-                align-items: center;
-                h1 {
-                  padding: 50px;
-                  color: white;
-                  font-size: 25px;
-                  font-family: "Ubuntu Condensed";
-                  text-transform: uppercase;
-                }
+
+        .first__section {
+          .first__text {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            h1 {
+              padding: 50px;
+              color: white;
+              font-size: 25px;
+              font-family: "Ubuntu Condensed";
+              text-transform: uppercase;
             }
           }
         }
+
         .mouse {
           margin-top: 80px;
           width: 30px;
@@ -53,6 +47,7 @@
           border: 1px solid white;
           margin-left: calc(50% - 15px);
           border-radius: 18px;
+
           .wheel {
             display: inline-block;
             width: 3px;
@@ -67,6 +62,7 @@
           }
         }
       }
+
       section.landing__page-section {
         height: 100vh;
       }

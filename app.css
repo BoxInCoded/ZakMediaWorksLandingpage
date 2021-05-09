@@ -71,49 +71,34 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: 400;
 }
 
-.wrapper {
-	width: 100%;
-}
-
-.wrapper .main__wrap .container .header {
-	width: 100%;
-	height: auto;
-}
-
 .wrapper .main__wrap .container .header .logo {
 	width: 100%;
 	height: 25px;
-	background-color: black;
-	padding: 25px;
+	padding: 50px;
 }
 
 .wrapper .main__wrap .container .header .logo a.main__logo {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	color: white;
 }
 
 .wrapper .main__wrap .container .main {
-	width: 100%;
-	height: 100vh;
-	background-color: black;
-}
-
-.wrapper .main__wrap .container .main .block .first__section .image {
-	background-image: url("./assets/img/header.png");
-	background-position: center;
+	background-image: url("/assets/img/header.png");
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 100vh;
 }
 
-.wrapper .main__wrap .container .main .block .first__section .first__text {
+.wrapper .main__wrap .container .main .first__section .first__text {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
-.wrapper .main__wrap .container .main .block .first__section .first__text h1 {
+.wrapper .main__wrap .container .main .first__section .first__text h1 {
 	padding: 50px;
 	color: white;
 	font-size: 25px;
