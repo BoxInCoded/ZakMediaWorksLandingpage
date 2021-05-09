@@ -72,7 +72,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .wrapper .main__wrap .container .main {
-	background-image: url("assets/img/header.png");
+	background-image: url("/assets/img/header.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
