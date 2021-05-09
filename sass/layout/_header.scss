@@ -1,12 +1,52 @@
 .wrapper {
-  background-color: $body;
-  p {
-    color: $textWhite;
-  }
-  .red__text {
-    color: $textRed;
-  }
-  .green__text {
-    color: $textGreen;
+  width: 100%;
+  .main__wrap {
+    .container {
+      .header {
+        width: 100%;
+        height: auto;
+          .logo {
+            width: 100%;
+            height: 25px;
+            background-color: black;
+            padding: 25px;
+            a.main__logo {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              color: white;
+            }
+        }
+      }
+      .main {
+        width: 100%;
+        background-color: black;
+        section.landing__page-section {
+          height: 100vh;
+          .block {
+            .first__section {
+              .image {
+                background-image: url("./assets/img/header.png");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+              }
+              .first__text {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                h1 {
+                  padding: 50px;
+                  color: white;
+                  font-size: 25px;
+                  font-family: "Ubuntu Condensed";
+                  text-transform: uppercase;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
