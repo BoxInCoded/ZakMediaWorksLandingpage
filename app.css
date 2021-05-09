@@ -71,18 +71,6 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: 400;
 }
 
-.wrapper .main__wrap .container .header .logo {
-	width: 100%;
-	height: 25px;
-	padding: 50px;
-}
-
-.wrapper .main__wrap .container .header .logo a.main__logo {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
 .wrapper .main__wrap .container .main {
 	background-image: url("/assets/img/header.png");
 	background-repeat: no-repeat;
@@ -90,24 +78,31 @@ h1, h2, h3, h4, h5, h6 {
 	background-position: center;
 	width: 100%;
 	height: 100vh;
+	position: relative;
+}
+
+.wrapper .main__wrap .container .main .first__section .header .logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 50px;
 }
 
 .wrapper .main__wrap .container .main .first__section .first__text {
 	display: flex;
 	justify-content: center;
-	align-items: center;
 }
 
 .wrapper .main__wrap .container .main .first__section .first__text h1 {
-	padding: 50px;
+	margin-top: calc(50% - 90vh);
 	color: white;
-	font-size: 25px;
+	font-size: 38px;
 	font-family: "Ubuntu Condensed";
 	text-transform: uppercase;
 }
 
 .wrapper .main__wrap .container .main .mouse {
-	margin-top: 80px;
+	margin-top: calc(50% - 50vh);
 	width: 30px;
 	height: 50px;
 	border: 1px solid white;
@@ -126,6 +121,15 @@ h1, h2, h3, h4, h5, h6 {
 	animation-duration: 1s;
 	animation-iteration-count: infinite;
 	animation-timing-function: ease-out;
+}
+
+@keyframes wheel {
+	0% {
+		margin-top: 8px;
+	}
+	100% {
+		margin-top: 15px;
+	}
 }
 
 .wrapper .main__wrap .container section.landing__page-section {
