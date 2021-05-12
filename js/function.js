@@ -71,7 +71,7 @@ function returnHeader(logo) {
 }
 
 function returnSecondSection(Text, Button) {
-    let HTML = `<div class="second__section"> 
+    let HTML = `<div id="second__section" class="second__section"> 
                         <div class="left">
                            <div class="text_block">
                                 <p>${Text}</p>
