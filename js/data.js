@@ -1,10 +1,15 @@
 "use strict";
 
 const feed = [{
+    logo: {
+        main_logo: 'logo.png'
+    },
     background: {
-        main_section_image: [
-            'header.png'
-        ]
+        main_section_image: 'header.png',
+        second_section_image: 'section1.png',
+        third_section_image: 'section2.png',
+        testimonial_section_image: 'testimonial.png',
+        contact_section_image: 'BG.png',
     },
     Text: {
         first_text: 'Video projektai nuo idėjos iki finalo',
