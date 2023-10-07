@@ -13,24 +13,11 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Execute remote script
+      - name: Executing remote command
         uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.SSH_HOST }}
           USERNAME: ${{ secrets.SSH_USER }}
           PORT: 65002
           KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-          script: |
-            cd public_html
-
-            # Check for updates in the local repository
-            git remote update
-            LOCAL_CHANGES=$(git status -uno)
-
-            if [ -n "${LOCAL_CHANGES}" ]; then
-              # Local repository has changes, pull from local
-              git pull
-            else
-              echo "No local changes. Pulling from GitHub..."
-              git pull origin main
-            fi
+          script: cd public_html && git pull && cd wp-content/themes/videography && composer install && yarn && yarn build
