@@ -33,7 +33,7 @@ export default async (app) => {
    * @see {@link https://bud.js.org/docs/bud.watch}
    */
   // app
-  //   .setUrl('http://localhost:5000')
+  //   .setUrl('http://127.0.0.1:4000')
   //   .setProxyUrl('http://zakmediaworks.local')
   //   .watch(['resources/views', 'app']);
   app
