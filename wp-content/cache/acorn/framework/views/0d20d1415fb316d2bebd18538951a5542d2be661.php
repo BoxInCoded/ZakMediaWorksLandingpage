@@ -1,4 +1,4 @@
-<header class="banner">
+<header class="banner d-flex justify-content">
   <a class="brand" href="<?php echo e(home_url('/')); ?>">
     <?php echo $siteName; ?>
 
