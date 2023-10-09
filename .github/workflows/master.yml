@@ -13,16 +13,6 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Setup Node.js and Yarn
-        uses: actions/setup-node@v3
-        with:
-          node-version: 16
-      - run: npm ci
-      - run: npm test
-
-      - name: Install Yarn
-        run: npm install -g yarn
-
       - name: Executing remote command
         uses: appleboy/ssh-action@master
         with:
@@ -34,5 +24,6 @@ jobs:
             cd public_html && git pull
             cd wp-content/themes/videography
             composer install
+            npm install -g yarn
             yarn
             yarn build
