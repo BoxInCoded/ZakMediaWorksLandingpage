@@ -23,7 +23,7 @@ export default async (app) => {
    *
    * @see {@link https://bud.js.org/docs/bud.setPublicPath}
    */
-  app.setPublicPath('/app/themes/sage/public/');
+  app.setPublicPath('/wp_content/themes/videography/public/');
 
   /**
    * Development server settings
@@ -32,9 +32,13 @@ export default async (app) => {
    * @see {@link https://bud.js.org/docs/bud.setProxyUrl}
    * @see {@link https://bud.js.org/docs/bud.watch}
    */
+  // app
+  //   .setUrl('http://localhost:5000')
+  //   .setProxyUrl('http://zakmediaworks.local')
+  //   .watch(['resources/views', 'app']);
   app
-    .setUrl('http://localhost:3000')
-    .setProxyUrl('http://example.test')
+    .setUrl('http://localhost:5000')
+    .setProxyUrl('https://zakmediaworks.eu')
     .watch(['resources/views', 'app']);
 
   /**
@@ -71,7 +75,4 @@ export default async (app) => {
         customFontSize: false,
       },
     })
-    .useTailwindColors()
-    .useTailwindFontFamily()
-    .useTailwindFontSize();
 };
